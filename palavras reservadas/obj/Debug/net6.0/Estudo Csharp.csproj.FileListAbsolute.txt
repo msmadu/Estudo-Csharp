@@ -1,0 +1,5 @@
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\obj\Debug\net6.0\Estudo Csharp.csproj.AssemblyReference.cache
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\obj\Debug\net6.0\Estudo Csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\obj\Debug\net6.0\Estudo Csharp.AssemblyInfoInputs.cache
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\obj\Debug\net6.0\Estudo Csharp.AssemblyInfo.cs
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\obj\Debug\net6.0\Estudo Csharp.csproj.CoreCompileInputs.cache
