@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\z005362y\\OneDrive - Siemens AG\\Code estudo\\Estudo Csharp\\modulo 1 curso\\Estudo Csharp.csproj": {}
+    "C:\\Users\\z005362y\\OneDrive - Siemens AG\\Code estudo\\Estudo Csharp\\palavras reservadas e tipos primitivos\\Estudo Csharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\z005362y\\OneDrive - Siemens AG\\Code estudo\\Estudo Csharp\\modulo 1 curso\\Estudo Csharp.csproj": {
+    "C:\\Users\\z005362y\\OneDrive - Siemens AG\\Code estudo\\Estudo Csharp\\palavras reservadas e tipos primitivos\\Estudo Csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\z005362y\\OneDrive - Siemens AG\\Code estudo\\Estudo Csharp\\modulo 1 curso\\Estudo Csharp.csproj",
+        "projectUniqueName": "C:\\Users\\z005362y\\OneDrive - Siemens AG\\Code estudo\\Estudo Csharp\\palavras reservadas e tipos primitivos\\Estudo Csharp.csproj",
         "projectName": "Estudo Csharp",
-        "projectPath": "C:\\Users\\z005362y\\OneDrive - Siemens AG\\Code estudo\\Estudo Csharp\\modulo 1 curso\\Estudo Csharp.csproj",
+        "projectPath": "C:\\Users\\z005362y\\OneDrive - Siemens AG\\Code estudo\\Estudo Csharp\\palavras reservadas e tipos primitivos\\Estudo Csharp.csproj",
         "packagesPath": "C:\\Users\\z005362y\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\z005362y\\OneDrive - Siemens AG\\Code estudo\\Estudo Csharp\\modulo 1 curso\\obj\\",
+        "outputPath": "C:\\Users\\z005362y\\OneDrive - Siemens AG\\Code estudo\\Estudo Csharp\\palavras reservadas e tipos primitivos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\z005362y\\AppData\\Roaming\\NuGet\\NuGet.Config"
