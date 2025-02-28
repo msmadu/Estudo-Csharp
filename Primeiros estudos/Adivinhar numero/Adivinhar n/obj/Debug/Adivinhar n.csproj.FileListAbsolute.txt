@@ -1,0 +1,8 @@
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\Leet Code\Adivinhar n\Adivinhar n\bin\Debug\Adivinhar n.exe.config
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\Leet Code\Adivinhar n\Adivinhar n\bin\Debug\Adivinhar n.exe
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\Leet Code\Adivinhar n\Adivinhar n\bin\Debug\Adivinhar n.pdb
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\Leet Code\Adivinhar n\Adivinhar n\obj\Debug\Adivinhar n.csproj.AssemblyReference.cache
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\Leet Code\Adivinhar n\Adivinhar n\obj\Debug\Adivinhar n.csproj.SuggestedBindingRedirects.cache
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\Leet Code\Adivinhar n\Adivinhar n\obj\Debug\Adivinhar n.csproj.CoreCompileInputs.cache
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\Leet Code\Adivinhar n\Adivinhar n\obj\Debug\Adivinhar n.exe
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\Leet Code\Adivinhar n\Adivinhar n\obj\Debug\Adivinhar n.pdb
