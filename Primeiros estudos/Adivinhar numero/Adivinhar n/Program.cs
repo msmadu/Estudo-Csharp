@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Conteúdo aplicado: Program Structure; Basic Syntax; Data Types; Type Conversion; Variables; Constants; Operators; Decision Making; Loops.
+//Página com os conteúdos: https://www.tutorialspoint.com/csharp/index.htm e Módulo Linguagem de programação do curso no Balta.io
+
+using System;
 
 namespace Adivinhar_n
 {
