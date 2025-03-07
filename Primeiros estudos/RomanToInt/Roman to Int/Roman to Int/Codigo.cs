@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Roman_to_Int
+namespace RomanToIntConsole
 {
     public class Program
     {
