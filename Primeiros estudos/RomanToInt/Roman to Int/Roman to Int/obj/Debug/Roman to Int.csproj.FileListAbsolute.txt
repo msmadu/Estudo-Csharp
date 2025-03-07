@@ -1,0 +1,8 @@
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\Primeiros estudos\RomanToInt\Roman to Int\Roman to Int\obj\Debug\Roman to Int.csproj.AssemblyReference.cache
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\Primeiros estudos\RomanToInt\Roman to Int\Roman to Int\obj\Debug\Roman to Int.csproj.SuggestedBindingRedirects.cache
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\Primeiros estudos\RomanToInt\Roman to Int\Roman to Int\obj\Debug\Roman to Int.csproj.CoreCompileInputs.cache
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\Primeiros estudos\RomanToInt\Roman to Int\Roman to Int\bin\Debug\Roman to Int.exe.config
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\Primeiros estudos\RomanToInt\Roman to Int\Roman to Int\bin\Debug\Roman to Int.exe
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\Primeiros estudos\RomanToInt\Roman to Int\Roman to Int\bin\Debug\Roman to Int.pdb
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\Primeiros estudos\RomanToInt\Roman to Int\Roman to Int\obj\Debug\Roman to Int.exe
+C:\Users\z005362y\OneDrive - Siemens AG\Code estudo\Estudo Csharp\Primeiros estudos\RomanToInt\Roman to Int\Roman to Int\obj\Debug\Roman to Int.pdb
