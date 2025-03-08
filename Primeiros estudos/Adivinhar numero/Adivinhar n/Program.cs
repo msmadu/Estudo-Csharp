@@ -1,109 +1,118 @@
-﻿//Conteúdo aplicado: Program Structure; Basic Syntax; Data Types; Type Conversion; Variables; Constants; Operators; Decision Making; Loops.
-//Página com os conteúdos: https://www.tutorialspoint.com/csharp/index.htm e Módulo Linguagem de programação do curso no Balta.io
+﻿//Applied content: Program Structure; Basic Syntax; Data Types; Type Conversion; Variables; Constants; Operators; Decision Making; Loops.
+//Page with content: https://www.tutorialspoint.com/csharp/index.htm and Programming Language Module from the Balta.io course
 
 using System;
 
-namespace Adivinhar_n
+namespace NumberGame
 {
     public class Program
     {
         Random random = new Random();
-        public int numSecreto;
-        public int erros;
+        public int secretNumber;
+        public int wrongGuess;
 
-        public Program() 
+        public Program()
         {
-            numSecreto = random.Next(101);
+            secretNumber = random.Next(101);
         }
-        static void Main(string[] args)
+        static void Main(stringargs)
         {
-            Program jogo = new Program();
-            int chute;
-            bool chuteValido = false;
-            bool acertou = false;
-            
+            Program round = new Program();
+            int guess;
+            bool guessChecked = false;
+            bool win = false;
 
-            while (!chuteValido || !acertou)
+
+            while (!guessChecked || !win)
             {
-                Console.WriteLine("Chute um valor:");
+                Console.WriteLine("enter a value:");
                 string input = Console.ReadLine();
-                chute = int.Parse(input);
-                if (int.TryParse(input, out chute))
+                guess = int.Parse(input);
+                if (int.TryParse(input, out guess))
                 {
-                    chuteValido = true;
-                    jogo.Dicas(jogo.numSecreto, chute, ref acertou);
+                    guessChecked = true;
+                    round.Tips(round.secretNumber, guess, ref win);
                 }
             }
 
         }
 
-        public void Dicas(int numSecreto, int chute, ref bool acertou)
+        public void Tips(int secretNumber, int guess, ref bool win)
         {
-            if (chute != numSecreto){
-                erros += 1; 
-                if (chute > numSecreto && erros < 5){
-                    Console.WriteLine("* O chute é MAIOR que o numero secreto");
+            if (guess != secretNumber)
+            {
+                wrongGuess += 1;
+                if (guess > secretNumber && wrongGuess < 5)
+                {
+                    Console.WriteLine("* The guess is GREATER than the secret number");
                 }
-                else{
-                    Console.WriteLine("* O chute é MENOR que o numero secreto");
+                else
+                {
+                    Console.WriteLine("* The guess is LESS than the secret number");
                 }
-            } else {
-                Console.WriteLine("Parabéns você acertou! O numero secreto era {0}", numSecreto);
-                acertou = true;
-                erros += 1;
+            }
+            else
+            {
+                Console.WriteLine("Congratulations you guessed it! The secret number was {0}", secretNumber);
+                win = true;
+                wrongGuess += 1;
             }
 
-            switch(erros){
+            switch (wrongGuess)
+            {
                 case 1:
-                    if (Primo(numSecreto))
+                    if (Prime(secretNumber))
                     {
-                        Console.WriteLine("* O numero secreto é primo.");
+                        Console.WriteLine("* The secret number is prime.");
                     }
                     else
                     {
-                        Console.WriteLine("* O numero secreto NAO é primo.");
+                        Console.WriteLine("* The secret number is NOT prime.");
                     }
                     break;
                 case 2:
-                    if ((numSecreto % 2) == 0){
-                        Console.WriteLine("* O numero secreto é multiplo de dois");
-                    } else{
-                        Console.WriteLine("* O numero secreto NAO é multiplo de dois");
-                    }
-                    break;
-                case 3:
-                    if ((numSecreto % 3) == 0)
+                    if ((secretNumber % 2) == 0)
                     {
-                        Console.WriteLine("* O numero secreto é multiplo de tres");
+                        Console.WriteLine("* The secret number is a multiple of two");
                     }
                     else
                     {
-                        Console.WriteLine("* O numero secreto NAO é multiplo de tres");
+                        Console.WriteLine("* The secret number is NOT a multiple of two");
                     }
-                break;
+                    break;
+                case 3:
+                    if ((secretNumber % 3) == 0)
+                    {
+                        Console.WriteLine("* The secret number is a multiple of three");
+                    }
+                    else
+                    {
+                        Console.WriteLine("* The secret number is NOT a multiple of three");
+                    }
+                    break;
                 case 4:
-                        var multiplicacao = chute * numSecreto;
-                        Console.WriteLine("* ATENCAO ESTA E SUA ULTIMA CHANCE");
-                        Console.WriteLine("* O seu chute multiplicado pelo numero secreto equivale a: {0}", multiplicacao);
+                    var mult = guess * secretNumber;
+                    Console.WriteLine("* ATTENTION THIS IS YOUR LAST CHANCE");
+                    Console.WriteLine("* Your guess multiplied by the secret number equals: {0}", mult);
                     break;
                 default:
-                        Console.WriteLine("Voce perdeu, o numero secreto era {0}", numSecreto);
-                    acertou = true;
-                break;
-            } 
-            
-            
+                    Console.WriteLine("You lost, the secret number was {0}", secretNumber);
+                    win = true;
+                    break;
+            }
+
+
         }
 
-        public static bool Primo(int numSecreto)
+        public static bool Prime(int secretNumber)
         {
-            if (numSecreto <= 1) return false;
-            if (numSecreto == 2) return true;
-            if (numSecreto % 2 == 0) return false;
+            if (secretNumber <= 1) return false;
+            if (secretNumber == 2) return true;
+            if (secretNumber % 2 == 0) return false;
 
-            for (int i = 3; i <= Math.Sqrt(numSecreto); i += 2)
+            for (int i = 3; i <= Math.Sqrt(secretNumber); i += 2)
             {
-                if (numSecreto % i == 0) return false;
+                if (secretNumber % i == 0) return false;
             }
 
             return true;

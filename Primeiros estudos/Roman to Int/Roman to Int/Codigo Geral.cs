@@ -4,27 +4,27 @@ namespace RomanToIntConsole
 {
     public class Program
     {
-        static void Main(string valorRomano)
+        static void Main(string userInput)
         {
             Program program = new Program();
-            string[] romanos = { "I", "V", "X", "L", "C", "D", "M" };
-            int[] numerosConvertidos = { 1, 5, 10, 50, 100, 500, 1000 };
-            Console.WriteLine("Digite um valor em numeros romanos");
-            
+            stringromanNumbers = { "I", "V", "X", "L", "C", "D", "M" };
+            intconvertedNumbers = { 1, 5, 10, 50, 100, 500, 1000 };
+            Console.WriteLine("Enter a value in roman romanNumbers");
+
             do
             {
-                valorRomano = Console.ReadLine().ToUpper();
-            } while (string.IsNullOrEmpty(valorRomano) || valorRomano.Length > 15 || Validar(valorRomano, romanos) == false);
+                userInput = Console.ReadLine().ToUpper();
+            } while (string.IsNullOrEmpty(userInput) || userInput.Length > 15 || Validate(userInput, romanNumbers) == false);
 
-            int resultado = program.RomanToInt(valorRomano, romanos, numerosConvertidos);
-            Console.WriteLine(resultado);
+            int result = program.RomanToInt(userInput, romanNumbers, convertedNumbers);
+            Console.WriteLine(result);
         }
 
-        public static bool Validar(string valor, string[] romanos)
+        public static bool Validate(string result, stringromanNumbers)
         {
-            foreach (char c in valor)
+            foreach (char c in result)
             {
-                if (Array.IndexOf(romanos, c.ToString()) < 0)
+                if (Array.IndexOf(romanNumbers, c.ToString()) < 0)
                 {
                     return false;
                 }
@@ -32,32 +32,32 @@ namespace RomanToIntConsole
             return true;
         }
 
-        public int RomanToInt(string valorRomano, string[] romanos, int[] numerosConvertidos)
+        public int RomanToInt(string userInput, stringromanNumbers, intconvertedNumbers)
         {
-            int valor = 0;
-            for (int i = 0; i < valorRomano.Length; i++)
+            int result = 0;
+            for (int i = 0; i < userInput.Length; i++)
             {
-                char letraAtual = valorRomano[i];
-                int indexLetraAtual = Array.IndexOf(romanos, letraAtual.ToString());
-                if (i < valorRomano.Length - 1)
+                char currentLetter = userInput[i];
+                int indexCurrentLetter = Array.IndexOf(romanNumbers, currentLetter.ToString());
+                if (i < userInput.Length - 1)
                 {
-                    char proxLetra = valorRomano[i + 1];
-                    int indexProxLetra = Array.IndexOf(romanos, proxLetra.ToString());
-                    if (indexLetraAtual < indexProxLetra)
+                    char nextLetter = userInput[i + 1];
+                    int indexNextLetter = Array.IndexOf(romanNumbers, nextLetter.ToString());
+                    if (indexCurrentLetter < indexNextLetter)
                     {
-                        valor -= numerosConvertidos[indexLetraAtual];
+                        result -= convertedNumbers[indexCurrentLetter];
                     }
                     else
                     {
-                        valor += numerosConvertidos[indexLetraAtual];
+                        result += convertedNumbers[indexCurrentLetter];
                     }
                 }
                 else
                 {
-                    valor += numerosConvertidos[indexLetraAtual];
+                    result += convertedNumbers[indexCurrentLetter];
                 }
             }
-            return valor;
+            return result;
         }
     }
 }
